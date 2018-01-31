@@ -1,4 +1,5 @@
 #' ---
+#' title: Some other title
 #' output: github_document
 #' ---
 
