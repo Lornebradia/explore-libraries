@@ -1,7 +1,7 @@
 01\_explore-libraries\_jenny.R
 ================
 braschil
-Wed Jan 31 14:05:26 2018
+Wed Jan 31 14:17:51 2018
 
 ``` r
 ## how jenny might do this in a first exploration
