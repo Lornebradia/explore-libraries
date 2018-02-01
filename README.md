@@ -8,5 +8,4 @@ But wait! There's more!
 
 Wooh! I can also change & commit from GitHub itself! 
 
-
-I had coffee and cinnamon churros with chocolate. It was good. 
+I had coffee and cinnamon churros with chocolate. It was good. Yada yada yada.
