@@ -1,7 +1,7 @@
 Some other title
 ================
-braschil
-Wed Jan 31 14:34:40 2018
+Lorenzo the Magnificent
+Wed Jan 31 14:44:47 2018
 
 ``` r
 ## how jenny might do this in a first exploration

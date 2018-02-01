@@ -1,5 +1,6 @@
 #' ---
 #' title: Some other title
+#' author: Lorenzo the Magnificent
 #' output: github_document
 #' ---
 

@@ -47,3 +47,26 @@ inst %>% count(Built)
 ## is every package in .Library either base or recommended?
 ## study package naming style (all lower case, contains '.', etc
 ## use `fields` argument to installed.packages() to get more info and use it!
+
+library(tidyverse)
+library(ggraph)
+library(igraph)
+library(stringr)
+library(magrittr)
+
+
+inst %<>% mutate(linking_to = str_split(LinkingTo, " ") %>% map_chr(first) %>% gsub(",", "", .))
+
+plinks <- inst %>% 
+  drop_na(linking_to) %>% 
+  select(Package, linking_to) %>% 
+  as_tibble() %>% 
+  graph_from_data_frame()
+
+link_graph <- ggraph(plinks, layout = "fr") %>% 
+  geom_edge_link(alpha = .5) %>% 
+  geom_node_point(color = "blue", size = 5, alpha = .5) %>% 
+  
+
+
+
