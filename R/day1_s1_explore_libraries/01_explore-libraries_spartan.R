@@ -63,10 +63,14 @@ plinks <- inst %>%
   as_tibble() %>% 
   graph_from_data_frame()
 
-link_graph <- ggraph(plinks, layout = "fr") %>% 
-  geom_edge_link(alpha = .5) %>% 
-  geom_node_point(color = "blue", size = 5, alpha = .5) %>% 
-  
+(link_graph <- ggraph(plinks, layout = "fr") + 
+  geom_edge_link(alpha = .5) +
+  geom_node_point(color = "blue", size = 5, alpha = .5) +
+  geom_node_text(aes(label = name), repel = T) +
+  theme_void() +
+  ggtitle("Packages links between each other")
+)
+
 
 
 
